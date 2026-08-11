@@ -108,6 +108,62 @@ button:hover {
   background-color: #3949ab;
 }
 
+/* Participants list styling */
+.participants-list {
+  list-style: disc inside;
+  margin-top: 8px;
+  padding-left: 18px;
+  color: #444;
+  font-size: 14px;
+}
+
+.participants-list li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.no-participants {
+  color: #666;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* Remove button: hidden until hover */
+.participants-list li {
+  position: relative;
+  padding-right: 36px;
+}
+
+.participant-remove {
+  display: none;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.participant-remove:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
+
+.participants-list li:hover .participant-remove {
+  display: inline-block;
+}
+
+.participant-email {
+  display: inline-block;
+  max-width: calc(100% - 48px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .message {
   margin-top: 20px;
   padding: 10px;
